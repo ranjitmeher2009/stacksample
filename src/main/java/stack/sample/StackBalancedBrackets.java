@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class StackBalancedBrackets {
     public static void main(String[] args) {
-        String exp = "{A+(B*C)+[C*{D+(E+F)*(X*Y)}]}";
+        String exp = "{A+(B*C)+C*{D+(E+F)*(X*Y)}}";
         System.out.println(checkBalancedParenthesis(exp));
     }
 
