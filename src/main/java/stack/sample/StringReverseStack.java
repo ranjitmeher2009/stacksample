@@ -13,7 +13,7 @@ public class StringReverseStack {
         }
 
         while(!strStack.empty()){
-            System.out.println(strStack.pop());
+            System.out.print(strStack.pop()+ " | ");
         }
     }
 }

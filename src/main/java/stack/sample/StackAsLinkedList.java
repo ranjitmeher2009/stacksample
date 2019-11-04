@@ -68,7 +68,7 @@ public class StackAsLinkedList {
 
         stack.pop();
 
-        System.out.println("Top Element"+ stack.peek());
+        System.out.println("Top Element:---"+ stack.peek());
 
         stack.display();
 
