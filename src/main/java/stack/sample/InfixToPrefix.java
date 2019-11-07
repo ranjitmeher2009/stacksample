@@ -90,19 +90,9 @@ public class InfixToPrefix {
     }
 
     public static String reverse(String input) {
-        int len = input.length();
         String reverse = "";
-        char[] charr = new char[len];
-        for (int i = 0; i < len; i++) {
-            charr[i] = input.charAt(i);
-        }
-        for (int i = 0; i < len / 2; i++) {
-            char temp = charr[i];
-            charr[i] = charr[len - i - 1];
-            charr[len - i - 1] = temp;
-        }
-        for (int j = 0; j < len; j++) {
-            reverse += charr[j];
+        for(int i =input.length()-1; i >=0; i--){
+            reverse += input.charAt(i);
         }
         return reverse;
     }
